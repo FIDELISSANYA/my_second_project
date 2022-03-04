@@ -32,3 +32,6 @@ function akanName() {
             let formReset=document.getElementById(reset).value;
             formReset.reset();
         }
+        function akanName(){
+            document.getElementById("submit").submit();
+        }
