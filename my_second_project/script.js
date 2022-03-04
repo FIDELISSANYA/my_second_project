@@ -2,7 +2,7 @@ let akanMaleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame
 let akanFemaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 function akanName() {
     var dateOfBirth = document.getElementById("date").value;
-    var monthofBirth = document.getElementById("month").value;
+    var monthOfBirth = document.getElementById("month").value;
     var yearOfBirth = document.getElementById("year").value;
     var gender = document.getElementById("gender").value;
 
@@ -27,4 +27,8 @@ function akanName() {
         }
         if (yearOfBirth === "") {
             alert("Please input year of birth");
+        }
+        function detailsReset(){
+            let formReset=document.getElementById(reset).value;
+            formReset.reset();
         }
