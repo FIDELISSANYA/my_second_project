@@ -8,12 +8,14 @@ function akanName() {
 
     let birthDay = new Date("${date}-{month}-{year}");
     var dateStr = birthDay.toDateString();
-    let biirthDate = birthDay.getDay();
+    let birthDate = birthDay.getDay();
 
-    if(gender==="Male"){
-        let name=maleName[birthDay];
-        alert("You were born on " + dateStr + "Your Akan name is " + name);
-    if(gender==="Female"){
-        let name=femaleName[birthDay];
-         alert("You were born on " + dateStr + "Your Akan name is " + name);
-}
+    if (gender === "Male") {
+        let name = maleName[birthDay];
+        let test = document.getElementById("try");
+        test.innerHTML("You were born on " + dateStr + "Your Akan name is " + name);
+        if (gender === "Female") {
+            let name = femaleName[birthDay];
+            let test = document.getElementById("try");
+            test.innerHTML("You were born on " + dateStr + "Your Akan name is " + name);
+        }
