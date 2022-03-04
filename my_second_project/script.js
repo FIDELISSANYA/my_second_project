@@ -4,7 +4,7 @@ function akanName() {
     var dateOfBirth = document.getElementById("date").value;
     var monthofBirth = document.getElementById("month").value;
     var yearOfBirth = document.getElementById("year").value;
-    var gender = document.getElementById("gd").value;
+    var gender = document.getElementById("gender").value;
 
     let birthDay = new Date("${date}-{month}-{year}");
     var dateStr = birthDay.toDateString();
